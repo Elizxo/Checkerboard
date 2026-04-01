@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkerboard</title>
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" href="mainLayout.css?v=2">
+
+</head>
+<body>
+
+<h1>Checkerboard</h1>
+
+<div class="layout">
+
+  <div class="board-wrap">
+    <canvas id="boardCanvas" width="400" height="400"></canvas>
+    <div id="piecesLayer"></div>
+    <svg id="arrowSvg" viewBox="0 0 400 400"></svg>
+  </div>
+
+  <div class="panel">
+    <button class="btn" id="btnNewGame">New Game</button>
+    <button class="btn secondary" id="btnMoveRandomly">Move Random</button>
+    <button class="btn secondary" id="btnKingRandomly">King Random</button>
+    <button class="btn secondary" id="btnClear">Clear Board</button>
+    <div id="statusMsg">Click New Game to start.</div>
+  </div>
+
+</div>
+
+<script src="boardEvent.js?v=2"></script>
+<script src="checker.js?v=2"></script>
+<script src="board.js?v=2"></script>
+<script src="main.js?v=2"></script>
+
+</body>
+</html>
